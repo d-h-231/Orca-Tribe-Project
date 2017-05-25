@@ -1,10 +1,4 @@
 /*-------------FONTS------------*/
-
-@font-face {
-	font-family: The Next Font;
-	src: url(http://www.orcatribeproject.com/wordpress/wp-content/themes/edited-responsive1/fonts/The_Next_Font/TheNextFont);
-}
-
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 p {
