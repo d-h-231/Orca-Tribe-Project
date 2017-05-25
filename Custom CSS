@@ -1,16 +1,16 @@
 /*-------------FONTS------------*/
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
 p {
 	font-family: "Source Sans Pro";
 }
 
 h1 {
-	font-family: "The Next Font";
+	font-family: "The Next Font", sans-serif;
 }
 
 h3 {
-	font-family: "Source Sans Pro";
+	font-family: "Source Sans Pro", , sans-serif;
 	text-transform: uppercase;
 }
 
@@ -34,8 +34,9 @@ h3 {
 	color: black;
 	border: none;
 	text-transform: uppercase;
-	font-family: "Source Sans Pro";
-	font-size: 16px;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
 }
 
 .menu a:hover {
@@ -79,6 +80,7 @@ h3 {
 
 .widget-title-home h3 {
 	padding: 0 0 0 0;
+	font-weight: 600;
 }
 
 /*--------FEATURED AREA--------*/
