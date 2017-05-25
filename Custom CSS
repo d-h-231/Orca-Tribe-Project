@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: The Next Font;
-	src: url(localhost/wordpress/wp-content/edited-responsive/fonts/The_Next_Font/TheNextFont);
+	src: url(http://www.orcatribeproject.com/wordpress/wp-content/themes/edited-responsive1/fonts/The_Next_Font/TheNextFont);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
@@ -59,6 +59,14 @@ h3 {
 }
 
 /*---------WIDGET STYLE---------*/
+
+.top-left-widget {
+	width: inherit;
+}
+
+.widget_wpcom_social_media_icons_widget a {
+	color: black;
+}
 
 .widget-wrapper {
 	background-color: #fff;
