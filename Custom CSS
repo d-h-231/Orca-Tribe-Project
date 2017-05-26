@@ -81,8 +81,42 @@ h3 {
 .widget-title-home h3 {
 	padding: 0 0 0 0;
 	font-weight: 600;
+	font-size: 20px
 }
 
+/*------------FORMS------------*/
+#subscribe-field-blog_subscription-2 {
+	box-shadow: none;
+	border-color: rgb(255, 255, 255);
+	border-bottom-color: rgb(0, 0, 0);
+	color: rgb(0, 0, 0);
+}
+
+#subscribe-submit {
+	display: none;
+}
+
+select, input[type="text"], input[type="password"], input[type="email"] {
+	box-shadow: none;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	padding: 0 0 0 0;
+}
+
+a.button, input[type='reset'], input[type='button'], input[type='submit'] {
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+	background-color: none;
+}
+
+a.button, input[type='reset'], input[type='button'], input[type='submit']:hover {
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+	background-color: none;
+}
 /*--------FEATURED AREA--------*/
 #featured-story h1{
 	color: #fff;
