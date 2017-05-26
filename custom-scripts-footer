@@ -1,0 +1,48 @@
+<script>
+    var imgStory = document.getElementById("featured-story-image");
+    var imgArtist = document.getElementById("featured-artist-image");
+    var widthStory = imgStory.width;
+    var heightStory = imgStory.height;
+    var widthArtist = imgArtist.width;
+    var heightArtist = imgArtist.height;
+    
+    fitImage();
+
+    //if img W>H, set style to height: 100%; width: auto.
+    //if H>W, set style to width: 100%; height: auto
+
+    function fitImage(){
+        console.log("fitImage is running!");
+        console.log(imgStory);
+        console.log(imgArtist);
+        if (widthStory > heightStory) {
+            imgStory.style.height = "385px";
+            imgStory.style.width = "auto";
+        }   else {
+            imgStory.style.width = "539px";
+            imgStory.style.height = "auto";
+        }
+        if (widthArtist > heightArtist) {
+            imgArtist.style.height = "385px";
+            imgArtist.style.width = "auto";
+        }   else {
+            imgArtist.style.width = "385px";
+            imgArtist.style.height = "auto";
+        }
+
+    }
+    function unselectFeaturedStory(){
+        imgStory.style.filter="opacity(100%)";
+    }
+        
+    function selectFeaturedStory(){
+        imgStory.style.filter="opacity(70%)";
+    }
+    function unselectFeaturedArtist(){
+        imgArtist.style.filter="opacity(100%)";
+    }
+        
+    function selectFeaturedArtist(){
+        imgArtist.style.filter="opacity(70%)";
+    }
+</script>
