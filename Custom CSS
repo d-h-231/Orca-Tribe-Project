@@ -1,12 +1,20 @@
 /*-------------FONTS------------*/
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
+@import url('https://fonts.googleapis.com/css?family=Rubik:700');
+
 p {
 	font-family: "Source Sans Pro";
 }
 
 h1 {
-	font-family: "The Next Font", sans-serif;
+	font-family: "The Next Font", "Rubik", sans-serif;
+	font-weight: 700;
+}
+
+h2 {
+		font-family: "The Next Font", "Rubik", sans-serif;
+	font-weight: 700;
 }
 
 h3 {
@@ -53,6 +61,32 @@ h3 {
 	color: gray;
 }
 
+ul.menu > li:hover {
+	background-color: #fff;
+}
+
+/*----------EVENTS----------*/
+
+#tribe-events-content a {
+	color: rgb(0, 0, 0);
+}
+
+#tribe-events-content .tribe-events-tooltip h4{
+	color: black;
+}
+
+#tribe-events .tribe-events-button{
+	background-color: black;
+	color: white;
+}
+
+#tribe-events .tribe-events-button:hover{
+	background-color: white;
+	color: black;
+	border-color: black;
+	border-radius: none;
+}
+
 /*---------WIDGET STYLE---------*/
 
 .top-left-widget {
@@ -61,6 +95,10 @@ h3 {
 
 .widget_wpcom_social_media_icons_widget a {
 	color: black;
+}
+
+.widget_wpcom_social_media_icons_widget a:hover {
+	color: gray;
 }
 
 .widget-wrapper {
@@ -82,6 +120,12 @@ h3 {
 	padding: 0 0 0 0;
 	font-weight: 600;
 	font-size: 20px
+}
+
+.success {
+	background-color: rgb(255, 255, 255);
+	border: none;
+	margin-bottom:3em;
 }
 
 /*------------FORMS------------*/
