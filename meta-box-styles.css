@@ -1,0 +1,24 @@
+#story_meta{
+	overflow: hidden;
+	padding-bottom: 1em;
+}
+
+#story_meta p{
+	clear: both;
+}
+
+.story_meta-row-title{
+	display: block;
+	float: left;
+	width: 200px;
+}
+
+.story_meta-row-content{
+	float: left;
+	padding-bottom: 1em;
+}
+
+.story_meta-row-content label{
+	display: block;
+	line-height: 1.75em;
+}
