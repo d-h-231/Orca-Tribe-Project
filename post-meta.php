@@ -27,5 +27,11 @@ if ( !defined( 'ABSPATH' ) ) {
 <?php endif; ?>
 
 <div class="post-meta">
-
+<?php
+    $ID = get_the_ID();
+    $post_author = get_post_meta($ID, 'author-name', true);
+    $post_date = get_the_date('M j, Y', $ID);
+?>
+    <p class="byline">by <?php echo $post_author;?></p>
+    <p><?php echo $post_date;?></p>
 </div><!-- end of .post-meta -->
