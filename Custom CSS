@@ -3,17 +3,18 @@
 
 @import url('https://fonts.googleapis.com/css?family=Rubik:700');
 
+
 p {
 	font-family: "Source Sans Pro";
 }
 
 h1 {
-	font-family: "The Next Font", "Rubik", sans-serif;
+	font-family: "TheNextFont", "Rubik", sans-serif;
 	font-weight: 700;
 }
 
 h2 {
-		font-family: "The Next Font", "Rubik", sans-serif;
+		font-family: "TheNextFont", "Rubik", sans-serif;
 	font-weight: 700;
 }
 
@@ -22,6 +23,44 @@ h3 {
 	text-transform: uppercase;
 	margin-top: 24px;
 }
+/*----------POST STYLE----------*/
+p.byline{
+	font-style: italic;
+	font-size: 16px;
+	margin: 0px;
+}
+
+p.postdate {
+	font-size: 16px;
+	margin: 0px;
+}
+
+.wp-caption {
+	background: none;
+	padding: none;
+	border: none;
+	margin: 0px;
+	font-size: 12px;
+	text-align: left;
+}
+
+.wp-caption.alignleft {
+	margin: 0px 20px 5px 0px;
+	padding: 0px;
+}
+
+
+
+.media-credit-container {
+	margin: 0px 5px 5px 0px;
+}
+
+.media-credit {
+	margin: 9px 5px 9px 5px;
+	font-size: 9px;
+}
+
+
 
 /*---CENTER LOGO/HEADER IMAGE---*/
 #logo img {
