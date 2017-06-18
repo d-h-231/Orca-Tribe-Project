@@ -49,10 +49,17 @@ p.postdate {
 	padding: 0px;
 }
 
+.wp-caption.alignright {
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+}
 
-
-.media-credit-container {
+.media-credit-container.alignleft {
 	margin: 0px 5px 5px 0px;
+}
+
+.media-credit-container.alignright {
+	margin: 0px 0px 0px 5px;
 }
 
 .media-credit {
@@ -60,7 +67,11 @@ p.postdate {
 	font-size: 9px;
 }
 
+/*----------SHARE ICONS---------*/
 
+.jp-sharing-input-touch .sd-content ul li {
+	padding-left: 0px;
+}
 
 /*---CENTER LOGO/HEADER IMAGE---*/
 #logo img {
