@@ -96,30 +96,6 @@ function story_meta_save( $post_id ) {
 add_action( 'save_post', 'story_meta_save' );
 
 /**
- * Add Photographer Name and URL fields to media uploader
- */
- 
-function attachment_field_credit( $form_fields, $post ) {
-	$form_fields['photographer-name'] = array(
-		'label' => 'Photographer Name',
-		'input' => 'text',
-		'value' => get_post_meta( $post->ID, 'photographer_name', true ),
-		'helps' => 'If provided, photo credit will be displayed',
-	);
-
-	$form_fields['photographer-url'] = array(
-		'label' => 'Photographer URL',
-		'input' => 'text',
-		'value' => get_post_meta( $post->ID, 'photographer_url', true ),
-		'helps' => 'Add Photographer URL',
-	);
-
-	return $form_fields;
-}
-
-add_filter( 'attachment_fields_to_edit', 'attachment_field_credit', 10, 2 );
-
-/**
  * Save values of Photographer Name and URL in media uploader
  *
  */
