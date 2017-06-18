@@ -33,5 +33,5 @@ if ( !defined( 'ABSPATH' ) ) {
     $post_date = get_the_date('M j, Y', $ID);
 ?>
     <p class="byline">by <?php echo $post_author;?></p>
-    <p><?php echo $post_date;?></p>
+    <p class="postdate"><?php echo $post_date;?></p>
 </div><!-- end of .post-meta -->
