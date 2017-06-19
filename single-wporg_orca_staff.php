@@ -9,13 +9,13 @@ if ( !defined( 'ABSPATH' ) ) {
  * Single Posts Template
  *
  *
- * @file           single.php
+ * @file           single-wporg_orca_staff.php
  * @package        Responsive
- * @author         Emil Uzelac
+ * @author         Michael Hall based on work by Emil Uzelac
  * @copyright      2003 - 2014 CyberChimps
  * @license        license.txt
  * @version        Release: 1.0
- * @filesource     wp-content/themes/responsive/single.php
+ * @filesource     wp-content/themes/responsive/single-wporg_orca_staff.php
  * @link           http://codex.wordpress.org/Theme_Development#Single_Post_.28single.php.29
  * @since          available since Release 1.0
  */
