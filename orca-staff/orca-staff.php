@@ -2,7 +2,7 @@
 /*
 Plugin Name: Orca Staff Page
 Plugin URI: 
-Version: 0.2
+Version: 0.3
 Description: Adds Staff Page.
 Author: Michael Hall
 */
