@@ -2,7 +2,7 @@
 /*
 Plugin Name: Orca Editor Buttons
 Plugin URI:
-Version: 0.6
+Version: 0.8
 Description: Adds pullquote to editor
 Author: Michael Hall
 */
