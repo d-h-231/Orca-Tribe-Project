@@ -57,13 +57,13 @@
                           ],
                     onsubmit: function( e ) {
                         if (e.data.float == "l"){
-                         ed.insertContent("<div style= 'float: left; font-size: 20px; width: 50%; margin: 16px'>" + "<p>" + e.data.quoteBox + "</p>" + "<p style='font-style: italic; float: right; font-size: 20px; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox + "</p>" + "</div>" + "-");
+                         ed.insertContent("<div style= 'float: left; font-size: 20px; width: 50%; margin: 16px'>" + e.data.quoteBox + "<br>" + "<span style='font-style: italic; float: right; font-size: 20px; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox + "</span>" + "</div>" + "-");
                         }
                         else if (e.data.float == "c"){
-                           ed.insertContent("<div style= 'font-size: 20px; width: 100%; margin: 16px'>" + "<p>" + e.data.quoteBox + "</p>" + "<p style='font-style: italic; float: right; font-size: 20px; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox + "</p>" + "</div>" + "-");
+                          ed.insertContent("<div style= 'font-size: 20px; width: 100%; margin: 16px'>" + e.data.quoteBox + "<br>" + "<span style='font-style: italic; float: right; font-size: 20px; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox + "</span>" + "</div>" + "-");
                         }
                         else{
-                           ed.insertContent("<div style= 'float: right; font-size: 20px; width: 50%; margin: 16px'>" + "<p>" + e.data.quoteBox + "</p>" + "<p style='font-style: italic; float: right; font-size: 20px; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox + "</p>" + "</div>" + "-");
+                           ed.insertContent("<div style= 'float: right; font-size: 20px; width: 50%; margin: 16px'>" + e.data.quoteBox + "<br>" + "<span style='font-style: italic; float: right; font-size: 20px; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox + "</span>" + "</div>" + "-");
                         }
                     }
                 });
@@ -78,7 +78,7 @@
             return {
                 longname : "Orca Buttons",
                 author : "Michael Hall",
-                version : "0.6"
+                version : "0.8"
             };
         }
     });
