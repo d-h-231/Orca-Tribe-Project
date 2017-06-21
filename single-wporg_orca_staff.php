@@ -71,11 +71,11 @@ get_header(); ?>
 			</div><!-- end of #post-<?php the_ID(); ?> -->
 			<?php responsive_entry_after(); ?>
 
-			<?php responsive_comments_before(); ?>
-			<?php comments_template( '', true ); ?>
-			<?php responsive_comments_after(); ?>
 
 		<?php
+            
+        wp_reset_postdata();
+    
 		endwhile;
 
 		get_template_part( 'loop-nav', get_post_type() );
@@ -87,6 +87,40 @@ get_header(); ?>
 	endif;
 	?>
 
+    <div>
+    extra posts
+<?php  
+
+    $loop1 = new WP_Query(
+        array(
+            'post_type'      => 'wporg_orca_staff',
+            'orderby'       => 'title',
+            'order'          => 'ASC',
+            'post_status'    => 'publish',
+            'posts_per_page' => 2
+        )                    
+    );
+
+?>
+    
+	<?php if ($loop1 -> have_posts() ) : ?>
+
+		<?php while($loop1 -> have_posts() ) : $loop1 -> the_post(); ?>
+        
+        <?php the_title();?>
+        
+        <?php
+            
+        wp_reset_postdata();
+    
+		endwhile;
+
+	endif;
+	?>
+    
+    </div>
+    
+    
 </div><!-- end of #content -->
 
 
