@@ -27,6 +27,7 @@ function wporg_custom_post_type()
                            'supports'     => ['title', 'editor', 'thumbnail', 'revisions', 'custom-fields'],
                            'public'      => true,
                            'has_archive' => true,
+                           'publicly_queryable'  => true,
                            'rewrite'     => ['slug' => 'staff'],
                            
                        ]
