@@ -1,3 +1,19 @@
+#wrapper {
+	border: 0px;
+}
+
+#content {
+	margin-top: -10px;
+}
+
+p a {
+	color: rgba(247, 19, 19, 1.0);
+}
+
+a:hover {
+	color: rgba(247, 19, 19, 0.8);
+}
+
 /*-------------FONTS------------*/
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
@@ -19,7 +35,7 @@ h2 {
 }
 
 h3 {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Source Sans Pro" , sans-serif;
 	text-transform: uppercase;
 	margin-top: 24px;
 }
@@ -143,6 +159,38 @@ ul.menu > li:hover {
 	width: inherit;
 }
 
+#searchsubmit {
+	border: none;
+	color: black;
+	font-family: "Source Sans Pro", sans-serif;
+	background-color: white;
+}
+
+#searchsubmit:hover {
+	border: none;
+	color: gray;
+	font-family: "Source Sans Pro", sans-serif;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+
+#s {
+	border-bottom-color: black;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	font-family: "Source Sans Pro", sans-serif;
+	color: black;
+	}
+
+#s:hover {
+	border-bottom-color: gray;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	font-family: "Source Sans Pro", sans-serif;
+	}
+
 .widget_wpcom_social_media_icons_widget a {
 	color: black;
 }
@@ -185,6 +233,13 @@ ul.menu > li:hover {
 	margin-bottom:3em;
 }
 
+/*-----------COMMENTS-----------*/
+#respond {
+	background-color: #fff;
+	background-image: none;
+	background: rgba(255, 255, 255, 1);
+	border: 0px;
+}
 /*------------FORMS------------*/
 #subscribe-field-blog_subscription-2 {
 	box-shadow: none;
