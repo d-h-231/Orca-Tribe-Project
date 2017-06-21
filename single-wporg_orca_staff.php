@@ -22,7 +22,7 @@ if ( !defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-<div id="content" class="<?php echo esc_attr( implode( ' ', responsive_get_content_classes() ) ); ?>" role="main">
+<div id="content">
 
 	<?php get_template_part( 'loop-header', get_post_type() ); ?>
 
@@ -35,7 +35,7 @@ get_header(); ?>
 				<?php responsive_entry_top(); ?>
                 
                 <div>
-                <h1 style='margin-bottom: 0px'><?php the_title();?></h1>
+                <h1 style='margin-bottom: 0px; text-transform: uppercase'><?php the_title();?></h1>
 				<h5 style='margin-top: 0px'> <?php $job = get_post_meta(get_the_ID(), 'job-title', true); echo $job;
                       $image_size = get_post_meta('feat-image-size',true)?></h5>
                 </div>
@@ -89,5 +89,5 @@ get_header(); ?>
 
 </div><!-- end of #content -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
