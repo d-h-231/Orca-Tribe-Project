@@ -57,13 +57,13 @@
                           ],
                     onsubmit: function( e ) {
                         if (e.data.float == "l"){
-                         ed.insertContent("<div style= 'float: left; font-size: 20px; width: 50%; margin: 16px'>" + e.data.quoteBox + "<br>" + "<span style='font-style: italic; float: right; font-size: 20px; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox + "</span>" + "</div>" + "-");
+                         ed.insertContent("<div style= 'float: left; font-size: 20px; width: 50%; margin-right: 16px; margin-left: 16px'>" + "<p style= 'margin: 0px'>" + e.data.quoteBox + "</p>" + "<br>" + "<h1 style= 'margin: 0px'>" + "<span style='margin: 0px; font-style: italic; text-align: right; font-size: 20px; float: right; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox +  "</span>" + "</h1>"  + "</div>" + "-");
                         }
                         else if (e.data.float == "c"){
-                          ed.insertContent("<div style= 'font-size: 20px; width: 100%; margin: 16px'>" + e.data.quoteBox + "<br>" + "<span style='font-style: italic; float: right; font-size: 20px; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox + "</span>" + "</div>" + "-");
+                          ed.insertContent("<div style= 'font-size: 20px; width: 100%; margin: 16px'>" + "<p style= 'margin: 0px'>" + e.data.quoteBox + "</p>" + "<br>" + "<h1 style='margin: 0px'>" + "<span style='width: 100%; font-style: italic; text-align: right; font-size: 20px; float: right; text-transform: uppercase; color: grey; font-weight: bold; margin-left: 16px'>" + "-" + e.data.sourceBox +  "</span>" + "</h1>"  + "</div>" + "-");
                         }
                         else{
-                           ed.insertContent("<div style= 'float: right; font-size: 20px; width: 50%; margin: 16px'>" + e.data.quoteBox + "<br>" + "<span style='font-style: italic; float: right; font-size: 20px; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox + "</span>" + "</div>" + "-");
+                           ed.insertContent("<div style= 'float: right; font-size: 20px; width: 50%; margin-right: 16px; margin-left: 16px'>" + "<p style= 'margin: 0px'>" + e.data.quoteBox + "</p>" + "<br>" + "<h1 style= 'margin: 0px'>" + "<span style='margin: 0px; font-style: italic; text-align: right; font-size: 20px; float: right; text-transform: uppercase; color: grey; font-weight: bold'>" + "-" + e.data.sourceBox +  "</span>" + "</h1>"  + "</div>" + "-");
                         }
                     }
                 });
