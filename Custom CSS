@@ -2,11 +2,21 @@
 	border: 0px;
 }
 
-#content {
+#content, #content-archive {
 	margin-top: -10px;
 }
+#content-archive a {
+	color: black;
+}
 
-p a {
+#content-archive a:hover {
+	color: gray;
+}
+
+#content-archive p {
+	color: black;
+}
+a {
 	color: rgba(247, 19, 19, 1.0);
 }
 
@@ -288,4 +298,43 @@ a.button, input[type='reset'], input[type='button'], input[type='submit']:hover 
 	margin-top: 1.5em;
 	text-transform: uppercase;
 	color: black;
+}
+
+/*-------CALENDAR WIDGET-------*/
+
+.tribe-events-widget-link p {
+	font-weight: 200;
+	margin: 0 0 0 0;
+}
+
+ol.tribe-list-widget{
+	margin: 10px 0 0 0;
+}
+
+#widgets ol {
+	padding: 0 0 0 0;
+}
+.tribe-events-list-widget {
+	padding: 0;
+}
+.tribe-event-title a {
+	color: black;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.tribe-event-duration {
+	padding: 0 0 0 20px;
+	font-style: italic;
+}
+
+/*-------------FAQs-------------*/
+.ewd-ufaq-author-date {
+	display: none;
+}
+.ufaq-faq-categories {
+	display: none;
+}
+.ufaq-permalink {
+	display: none;
 }
