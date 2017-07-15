@@ -136,7 +136,7 @@ $ftartist_query = new WP_Query( array(
             imgArtist.style.height = "auto";
         }
 
-    }
+    }*/
     function unselectFeaturedStory(){
         imgStory.style.filter="opacity(100%)";
     }
@@ -150,5 +150,5 @@ $ftartist_query = new WP_Query( array(
         
     function selectFeaturedArtist(){
         imgArtist.style.filter="opacity(70%)";
-    }*/
+    }
 </script>
