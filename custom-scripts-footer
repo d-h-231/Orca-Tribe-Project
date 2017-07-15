@@ -1,3 +1,31 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 40
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 <script>
     var imgStory = document.getElementById("featured-story-image");
     var imgArtist = document.getElementById("featured-artist-image");
@@ -6,34 +34,54 @@
     var widthArtist = imgArtist.width;
     var heightArtist = imgArtist.height;
     
-    fitImage();
+    fitStoryImage();
+    console.log(imgStory);
+    fitArtistImage();
+    console.log(imgArtist);
+
 
     //if img W>H, set style to height: 100%; width: auto.
     //if H>W, set style to width: 100%; height: auto
 
-    function fitImage(){
-        console.log("fitImage is running!");
-        console.log(imgStory);
-        console.log(imgArtist);
+    function fitStoryImage(){
+        console.log("fitStoryImage is running!");
+
+
         if (widthStory > heightStory) {
+console.log("The story image's width is greater than its height");
             imgStory.style.height = "385px";
             imgStory.style.width = "auto";
         }   else {
-            imgStory.style.width = "539px";
-            imgStory.style.height = "auto";
+console.log("The story image's height is greater than its width");
+             imgStory.style.width = "539px";
+             imgStory.style.height = "auto";
         }
+console.log("Story image fitted");
+}
+
+function fitArtistImage() {
+
+console.log("fitArtistImage is running!");
         if (widthArtist > heightArtist) {
+console.log("The artist image's width is greater than its height");
             imgArtist.style.height = "385px";
             imgArtist.style.width = "auto";
         }   else {
             imgArtist.style.width = "385px";
             imgArtist.style.height = "auto";
         }
-
+console.log("Artist image fitted");
     }
+
     function unselectFeaturedStory(){
         imgStory.style.filter="opacity(100%)";
     }
+
+function reloadpage(){
+
+location.reload();
+
+}
         
     function selectFeaturedStory(){
         imgStory.style.filter="opacity(70%)";
