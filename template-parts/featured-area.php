@@ -68,15 +68,26 @@ $ftartist_query = new WP_Query( array(
         text-align: right;
     }
     
-    #featured-artist-image {
-        max-width: none;
+    
+    div.fill {
+        position:relative;
+        border:1px dashed red;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        overflow:hidden
+    }
+    div.fill img {
+        flex-shrink: 0;
+        min-width:100%;
+        min-height:100%
     }
 </style>
 
 <!--Featured Story-->
 
 <a href="<?php echo $fts_URL;?>">
-    <div id="featured-story" onmouseover="selectFeaturedStory();" onmouseout="unselectFeaturedStory();">
+    <div class="fill" id="featured-story" onmouseover="selectFeaturedStory();" onmouseout="unselectFeaturedStory();">
         <img id="featured-story-image" src="<?php echo $fts_image_url; ?>"/>
             <div class="featuredbottomleft">
                 <h1><?php echo $fts_headline;?></h1>
@@ -85,7 +96,7 @@ $ftartist_query = new WP_Query( array(
 </a>
 <!--Featured Artist-->
 <a href="<?php echo $fta_URL;?>">
-    <div id="featured-artist" onmouseover="selectFeaturedArtist();" onmouseout="unselectFeaturedArtist();">
+    <div class="fill" id="featured-artist" onmouseover="selectFeaturedArtist();" onmouseout="unselectFeaturedArtist();">
         <img id="featured-artist-image" src="<?php echo $fta_image_url; ?>"/>
             <div class="featuredtopright">
                 <h1><?php echo $fta_headline;?></h1>
@@ -94,7 +105,7 @@ $ftartist_query = new WP_Query( array(
 </a>
 
 <script>
-    var imgStory = document.getElementById("featured-story-image");
+    /* var imgStory = document.getElementById("featured-story-image");
     var imgArtist = document.getElementById("featured-artist-image");
     var widthStory = imgStory.width;
     var heightStory = imgStory.height;
@@ -139,5 +150,5 @@ $ftartist_query = new WP_Query( array(
         
     function selectFeaturedArtist(){
         imgArtist.style.filter="opacity(70%)";
-    }
+    }*/
 </script>
